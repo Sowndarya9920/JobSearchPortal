@@ -1,0 +1,85 @@
+
+# ***JOB SEARCH PORTAL***
+
+- The aim of the project is to perform the basic CRUD operations with some validations.
+- Spring initializer was used to create a spring boot application project.
+
+
+## **Frameworks and Languages used :**
+
+- Java
+- Spring Boot
+
+## **Dependency used :**
+
+- Spring web
+- Spring Boot Dev Tool
+- Lombok
+- Validations
+- H2 database
+
+## **Data Flow :**
+
+## **Model :** 
+
+- It consists of a Job class which consists of Entity's used to model our data application.
+- By using Lombok dependency , ___@Data___ , ___@AllArgsConstructor___ , ___@NoArgsConstructor___ is used to create getters and setters as well as default and parameterized constructors.
+
+## **Controller :**
+
+- It consists of JobController class which basically control the flow of data.
+- ___@RestController___ annotation is used to make the RestaurantController class as controller layer.
+- ___@GetMapping , @PostMapping , @PutMapping , @DeleteMapping___ annotations are used to perform the CRUD operations.
+- ___@Valid___ is used in post mapping in order to do some validations while inserting the data.
+
+
+
+
+- ### **API Reference :**
+
+#### ***Get Jobs by title and description***
+
+```http
+  http://localhost:8080/getJobByTitle/{title}/{description}
+```
+
+#### ***Add Jobs***
+
+```http
+  http://localhost:8080/addJobs
+```
+
+#### ***Delete Users by Location***
+
+```http
+  http://localhost:8080/delete/location/{location}
+```
+
+#### ***Update Users by salary***
+
+```http
+  http://localhost:8080/updateJob/{id}/{salary}
+```
+
+## **Service :** 
+
+- It consists of JobService class which helps us to write the business functionalities.
+- ___@Service___ annotation is used to make the class as a service layer.
+
+## **Repository :**
+
+- It consists of JobDao which is used to manage or datas.
+- ___@Repository___ annotation is used to make the class repository layer.
+
+## **Validations :** 
+- ___@NotEmpty___ is used as validation for title in order to specify that the name inserted must not be empty.
+- @NotNull is used as validation for description to be not null.
+ 
+
+
+## **Summary :**
+
+- In this project , I had created the RestApi's performing various ___CRUD operations___ such as fetch , save , delete and update users with ___validations___.
+- The RestApi's are tested by using ___Postman___ which is a client used to test our Api's.
+- The data's were stored in the ___H2 database___ which is ___in-memory database___.
+
