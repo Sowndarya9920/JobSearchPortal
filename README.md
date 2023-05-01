@@ -21,12 +21,18 @@
 - Validations
 - H2 database
 
+![image](https://user-images.githubusercontent.com/112794922/235453306-b5ea1cfc-a9f9-470d-baab-6f23520c8506.png)
+
+
 ## **Data Flow :**
 
 ## **Model :** 
 
 - It consists of a Job class which consists of Entity's used to model our data application.
 - By using Lombok dependency , ___@Data___ , ___@AllArgsConstructor___ , ___@NoArgsConstructor___ is used to create getters and setters as well as default and parameterized constructors.
+
+![image](https://user-images.githubusercontent.com/112794922/235453325-7a37add7-22be-486b-b3bc-dd29e493f419.png)
+
 
 ## **Controller :**
 
@@ -77,12 +83,16 @@
 
 - It consists of JobDao which is used to manage or datas.
 - ___@Repository___ annotation is used to make the class repository layer.
-- ![image](https://user-images.githubusercontent.com/112794922/235452781-2ee14061-9af6-4e4b-9957-edbc5e4136c2.png)
+
+![image](https://user-images.githubusercontent.com/112794922/235452781-2ee14061-9af6-4e4b-9957-edbc5e4136c2.png)
 
 
 ## **Validations :** 
 - ___@NotEmpty___ is used as validation for title in order to specify that the name inserted must not be empty.
 - @NotNull is used as validation for description to be not null.
+
+![image](https://user-images.githubusercontent.com/112794922/235453367-5aa1b237-7a1f-43cf-b778-e605b331b8ff.png)
+
  
 
 
