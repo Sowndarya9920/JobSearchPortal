@@ -35,6 +35,7 @@
 - ___@GetMapping , @PostMapping , @PutMapping , @DeleteMapping___ annotations are used to perform the CRUD operations.
 - ___@Valid___ is used in post mapping in order to do some validations while inserting the data.
 
+![image](https://user-images.githubusercontent.com/112794922/235452732-5ef9931f-b8fe-4916-8178-92c3e315ed95.png)
 
 
 
@@ -69,10 +70,15 @@
 - It consists of JobService class which helps us to write the business functionalities.
 - ___@Service___ annotation is used to make the class as a service layer.
 
+![image](https://user-images.githubusercontent.com/112794922/235452761-3d3bb08b-beb1-4f84-b280-7f9108d6595c.png)
+
+
 ## **Repository :**
 
 - It consists of JobDao which is used to manage or datas.
 - ___@Repository___ annotation is used to make the class repository layer.
+- ![image](https://user-images.githubusercontent.com/112794922/235452781-2ee14061-9af6-4e4b-9957-edbc5e4136c2.png)
+
 
 ## **Validations :** 
 - ___@NotEmpty___ is used as validation for title in order to specify that the name inserted must not be empty.
