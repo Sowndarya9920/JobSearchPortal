@@ -17,7 +17,7 @@ public class JobController {
 
     /* Task: 1 --> using in-build crud repository */
 
-    @PostMapping(name = "/addJobs")
+    @PostMapping(value = "/addJobs")
     public String insertJobs(@Valid @RequestBody List<Job> jobs){
         return jobService.insertJobs(jobs);
 
@@ -25,7 +25,7 @@ public class JobController {
 
     /* Task: 2 --> using custom finders */
 
-    @GetMapping(name = "/getJobByTitle/{title}/{description}")
+    @GetMapping(value = "/getJobByTitle/{title}/{description}")
     public List<Job> getJobByTitle(@PathVariable String title , @PathVariable String description){
         return jobService.getByTitle(title,description);
     }
@@ -34,12 +34,12 @@ public class JobController {
 
    /* Task : 3 --> using custom query */
 
-    @DeleteMapping(name = "/delete/location/{location}")
+    @DeleteMapping(value = "/delete/location/{location}")
     public void deleteJobByLocation(@PathVariable String location){
         jobService.deleteJobByLocation(location);
     }
 
-    @PutMapping(name="/updateJob/{id}/{salary}")
+    @PutMapping(value = "/updateJob/{id}/{salary}")
     public void updateJob(@PathVariable Long id , @PathVariable Double salary){
         jobService.updateJob(id,salary);
     }
