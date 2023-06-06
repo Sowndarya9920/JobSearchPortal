@@ -1,6 +1,6 @@
 ![Job-Listings](https://github.com/Sowndarya9920/JobSearchPortal/assets/112794922/378873a3-475e-444b-a1c4-b36183ac9c57)
 
-##### 🔸The student administration system you have built using the Spring Boot framework is designed to handle basic CRUD (Create, Read, Update, Delete) operations for managing student records.
+##### 🔸The Job search portal have built using the Spring Boot framework is designed to handle basic CRUD (Create, Read, Update, Delete) operations for managing job searches with some validations.
 ## :one: Frameworks and Languages Used -
     1. SpringBoot
     2. JAVA
@@ -13,24 +13,26 @@
     3. Lombok
     4. Spring Data JPA
     5. H2
+    6. Validations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## :three: Dataflow (Functions Used In)
 ### :white_flower: 1. Model - This used to show the mirror of our database which involves real world entities.
-#### :o: Student.java
+#### :o: Job.java
+#### :o: JobType.java
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### :white_flower: 2. Service - This Layer is used to perform business functionalities.
-#### :o: StudentService.java
+#### :o: JobService.java
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### :white_flower: 3. Controller - This Controller is used to create RestApi's and perform basic CRUD operations.
-#### :o: StudentController.java
+#### :o: JobController.java
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### :white_flower: 4. Repository : data access object (DAO) is an object that provides an abstract interface to some type of database or other persistence mechanisms.
-#### :o: IStudentsDao.java
+#### :o: IJobDao.java
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 ### :white_flower: 5. Application.properties File : The application.properties file in Spring Boot is a configuration file used to specify various settings and properties for the application.
