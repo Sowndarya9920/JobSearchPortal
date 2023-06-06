@@ -43,6 +43,12 @@ spring.datasource.username=sa
 spring.datasource.password=
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 spring.jpa.defer-datasource-initialization=true
+
+// To view queries in console
+
+spring.jpa.properties.hibernate.show_sql=true
+spring.jpa.properties.hibernate.use_sql_comments=true
+spring.jpa.properties.hibernate.format_sql=true
 ```
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 ## :five: Test Rest Api's
