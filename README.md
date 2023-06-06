@@ -52,32 +52,27 @@ spring.jpa.properties.hibernate.format_sql=true
 ```
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 ## :five: Test Rest Api's
-#### :white_check_mark: Student Controller
+#### :white_check_mark: Job Controller
 ```java
-http://localhost:8080/add-student
+http://localhost:8080/addJobs
 ```
 
 ```java
-http://localhost:8080/find-all-students
+http://localhost:8080/getJobByTitle/{title}/{description}
 ```
 
 ```java
-http://localhost:8080/find-student/id/{id}
+http://localhost:8080/delete/location/{location}
 ```
 
 ```java
-http://localhost:8080/update-student
+http://localhost:8080/updateJob/{id}/{salary}
 ```
-
-```java
-http://localhost:8080/delete-student
-```
-
 ## :six: Documentation in Swagger
 ```java
  http://localhost:8080/swagger-ui/index.html#/
 ```
 
 #  Summary
-- :small_orange_diamond: Implemented basic CRUD operations (Create, Read, Update, Delete) to manage student records, and you utilized the H2 database for storing and manipulating the data.
-- :small_orange_diamond: The system allows you to create new student records, retrieve existing records based on various criteria, update student information, and delete student records as needed, all using the H2 database as the underlying storage.
+- :small_orange_diamond: Implemented basic CRUD operations (Create, Read, Update, Delete) to manage job records, and you utilized the H2 database for storing and manipulating the data.
+- :small_orange_diamond: The system allows you to create new job records, retrieve existing records based on various criteria, update job information, and delete job records as needed, all using the H2 database as the underlying storage with validations.
